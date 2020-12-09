@@ -1,13 +1,14 @@
 {
-  "endpoint": "https://bitbucket.domain.tools",
-  "platform": "bitbucket-server",
-  "username": "username",
-  "password": "password",
+  "platform": "github",
+  "user": "marius-carp",
+  "logFileLevel": "debug",
+  "logLevel": "debug",
+  "token": "token",
   "extends": [
     "config:base"
   ],
   "repositories": [
-    "sef/renovate-test-scala"
+    "marius-carp/renovate-test-scala"
   ],
   "hostRules": [
     {
