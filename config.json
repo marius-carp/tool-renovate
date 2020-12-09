@@ -1,0 +1,32 @@
+{
+  "endpoint": "https://bitbucket.domain.tools",
+  "platform": "bitbucket-server",
+  "username": "username",
+  "password": "password",
+  "extends": [
+    "config:base"
+  ],
+  "repositories": [
+    "sef/renovate-test-scala"
+  ],
+  "hostRules": [
+    {
+      "hostType": "maven",
+      "endpoint": "https://artifactory.domain.tools/artifactory/domain-release-sbt/",
+      "username": "username",
+      "password": "password"
+    }
+  ],
+  "packageRules": [
+    {
+      "managers": [
+        "sbt"
+      ],
+      "automerge": false,
+      "registryUrls": [" https://artifactory.domain.tools/artifactory/domain-release-sbt/"]
+    }
+  ],
+  "sbt": {
+    "enabled": true
+  }
+}
